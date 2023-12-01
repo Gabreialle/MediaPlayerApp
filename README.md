@@ -8,7 +8,8 @@ To Run:
 Grab from green code button
 open in visual studio
 may need to be cloned into empty folder
-Requires Nuget Packages:
+Project is 6.0 long term support
+Installed Nuget Packages:
 Microsoft.EntityFrameworkCore.Design
 Microsoft.EntityFrameworkCore.Sqlite
 Microsoft.EntityFrameworkCore.Tools
