@@ -7,7 +7,11 @@ Add comments to your code explaining how you are using at least 2 of the solid p
 To Run: 
 Grab from green code button
 open in visual studio
-has
+may need to be cloned into empty folder
+Requires Nuget Packages:
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Sqlite
+Microsoft.EntityFrameworkCore.Tools
 In visual studio: run the project, when media player opens, click the Open button to open your file explorer, will need mp4 videos for testing on local machine.
 
 
