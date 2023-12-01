@@ -28,7 +28,7 @@ namespace MusicPlayerApp
                 track_list.SelectedIndex = track_list.SelectedIndex - 1;
             }
         }
-
+        //Controls for operation of GUI buttons
         private void btn_open_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
