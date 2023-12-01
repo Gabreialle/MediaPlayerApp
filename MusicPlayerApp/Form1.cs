@@ -4,12 +4,22 @@ namespace MusicPlayerApp
 {
     public partial class Form1 : Form
     {
+        private readonly PlaylistRepository _repository;
+
         public Form1()
         {
             InitializeComponent();
+            _repository = new PlaylistRepository();
+            LoadData();
 
-
+            player.uiMode = "none";
         }
+
+        private void LoadData()
+        {
+            var songs = _repository.GetAllSongs();
+        }
+
         string[] paths, files;
         private void button_prev_Click(object sender, EventArgs e)
         {
@@ -43,12 +53,10 @@ namespace MusicPlayerApp
             trackBar1.Value = 30;
             lbl_volume.Text = trackBar1.Value.ToString() + "%";
         }
-
         private void lbl_msg_Click(object sender, EventArgs e)
         {
 
         }
-
         private void btn_play_Click(object sender, EventArgs e)
         {
             player.Ctlcontrols.play();
@@ -74,6 +82,13 @@ namespace MusicPlayerApp
                 track_list.SelectedIndex = track_list.SelectedIndex + 1;
             }
         }
+        private void btn_playlist_Click(object sender, EventArgs e)
+        {
+            var newSong = new Songs();
+
+            _repository.AddSong(newSong);
+            LoadData();
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -91,6 +106,7 @@ namespace MusicPlayerApp
             player.settings.volume = trackBar1.Value;
             lbl_volume.Text = trackBar1.Value.ToString();
         }
+
     }
 }
 

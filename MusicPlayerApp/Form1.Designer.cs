@@ -129,7 +129,7 @@
             track_list.ItemHeight = 17;
             track_list.Location = new Point(27, 70);
             track_list.Name = "track_list";
-            track_list.Size = new Size(840, 123);
+            track_list.Size = new Size(840, 106);
             track_list.TabIndex = 5;
             track_list.SelectedIndexChanged += track_list_SelectedIndexChanged;
             // 
@@ -280,6 +280,8 @@
 
         #endregion
 
+        //Created buttons for GUI Design
+
         private AxWMPLib.AxWindowsMediaPlayer player;
         private GroupBox groupBox1;
         private Button btn_prev;
@@ -297,5 +299,6 @@
         private Label lbl_track_end;
         private Label lbl_msg;
         private System.Windows.Forms.Timer timer1;
+        
     }
 }
