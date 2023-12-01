@@ -13,6 +13,7 @@ Microsoft.EntityFrameworkCore.Design
 Microsoft.EntityFrameworkCore.Sqlite
 Microsoft.EntityFrameworkCore.Tools
 In visual studio: run the project, when media player opens, click the Open button to open your file explorer, will need mp4 videos for testing on local machine.
+Project turned out a little bit different compared to to what I originally submitted as my project plan.
 
 
 
